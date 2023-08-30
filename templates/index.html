@@ -30,10 +30,11 @@
         <div style="width:50px; height:50px;">
             <img src="{{url_for('static',filename='a.png')}}" alt="No image" class="img-fluid">
         </div>
-       <a class="nav-link text-white">Agriculture</a>
+       
        <a class="nav-link text-white" href="{{ url_for('home')}}">HOME</a>
        <a class="nav-link text-white" href="{{ url_for('about')}}">About Us</a>
        <a class="nav-link text-white" href="{{ url_for('analytics')}}">Analytics</a>
+       <a class="nav-link text-white" href="{{ url_for('story')}}">Story</a>
     </nav>
         <h1 class="text-center">Agriculture was the first occupation of man, and as it embraces the whole earth, it is the foundation of all other industries.</h1>
     </body>

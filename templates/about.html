@@ -16,7 +16,7 @@
         nav{
             background-color:rgba(218, 149, 21, 0.834);
         }
-        body {
+        .about {
             font-family: Arial, sans-serif;
             background-image: url("{{url_for('static',filename='1.jpg')}}");
             background-repeat: no-repeat;
@@ -28,14 +28,14 @@
             text-align: center;
             font-weight: bold;
             color:black;
-            padding: 50px 0;
+            padding: 45px 0;
         }
 
         .team-members {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 15px;
+            
         }
 h2,p{
     color:black;
@@ -47,15 +47,14 @@ h2,p{
         }
 
         .team-member:hover {
-            transform: scale(1.1);
+            transform: scale(0.9);
         }
 
         .team-member img {
             width: 400px;
             height: 500px;
-            
             object-fit: cover;
-            margin-bottom: 15px;
+            margin-bottom: 19px;
         }
     </style>
 </head>
@@ -64,13 +63,12 @@ h2,p{
         <div style="width:50px; height:50px;">
             <img src="{{url_for('static',filename='a.png')}}" alt="No image" class="img-fluid">
         </div>
-        
-    
-       <a class="nav-link text-white">Agriculture</a>
        <a class="nav-link text-white" href="{{ url_for('home')}}">HOME</a>
        <a class="nav-link text-white" href="{{ url_for('about')}}">About Us</a>
        <a class="nav-link text-white" href="{{ url_for('analytics')}}">Analytics</a>
+       <a class="nav-link text-white" href="{{ url_for('story')}}">Story</a>
     </nav>
+    <div class="about">
     <div class="container">
         <div class="team-heading">
             <h1>Our Team</h1>
@@ -79,18 +77,15 @@ h2,p{
             <div class="team-member">
                 <img src="{{url_for('static',filename='team1.jpg')}}" alt="Team Member 1">
                 <h2>Badri Venkata Durga Praveen</h2>
-                <p>20471A05D7</p>
+                <h3>20471A05D7</h3>
             </div>
             <div class="team-member">
                 <img src="{{url_for('static',filename='team2.jpg')}}" alt="Team Member 2">
                 <h2>Gajula Chenna Kesavulu</h2>
-                <p>20471A05F0</p>
+                <h3>20471A05F0</h3>
             </div>
         </div>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</div>
 </body>
 </html>
